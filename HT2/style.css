@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span{
+    display: inline-block;
+    margin: 15px 0 0;
+}
+
+button{
+    margin-top: 15px;
+    margin-right: 10px;
+}
