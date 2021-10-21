@@ -104,8 +104,9 @@
 .about-me__text {
     height: 366px;
     text-align: center;
-    max-width: 515px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-me__text h2 {
@@ -117,6 +118,7 @@
 }
 
 .about-me__text p {
+    width: 515px;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -161,7 +163,46 @@
     font-size: 16px;
 }
 
+.skils {
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.skils__box {
+    width: 58%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skils__info {
+    width: 445px;
+}
+
+.skils__info h2 {
+    font-weight: 500;
+    font-size: 32px;
+    margin: 102px 0 50px;
+}
+
+.skils__info p {
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 20px;
+}
+
+.skils__info hr {
+    height: 4px;
+    background: linear-gradient(to right, #34547A 80%, #C4C4C4 80%);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.skils__info hr:last-child {
+    margin-bottom: 0;
+}
 
 
 
