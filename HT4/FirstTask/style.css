@@ -93,7 +93,7 @@
 
 /* MAIN  */
 
-/* Mobile*/
+/* Secthion mobile*/
 
 .mobile {
     display: flex;
@@ -180,7 +180,7 @@
     cursor: pointer;
 }
 
-/* STANDARDS */
+/* Section standards */
 
 .standards {
     height: 797px;
@@ -265,7 +265,7 @@
     font-weight: 400;
 }
 
-/* SPECIALIZATION */
+/* Specialization */
 
 .specialization {
     height: 972px;
@@ -481,7 +481,7 @@
     color: white;
 }
 
-/* SUBSCRIBE */
+/* Subscribe */
 
 .subscribe {
     height: 365px;
