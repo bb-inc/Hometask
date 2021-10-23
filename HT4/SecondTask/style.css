@@ -54,14 +54,12 @@
 }
 
 .title__box {
-    width: 60%;
-    height: 51%;
+    width: 55%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .title__box img {
-    width: 50%;
     height: 233.7px;
     margin-top: 21px;
 }
