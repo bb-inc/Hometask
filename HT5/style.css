@@ -1,52 +1,188 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Circular Std';
-    ;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Circular Std';
 }
 
 .header__inner {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
 }
 
-.logo {
-    margin-left: 69px;
+.header__logo {
+  margin-left: 69px;
 }
 
 .nav {
-    margin-right: 129px;
+  margin-right: 129px;
 }
 
 .nav a {
-    margin-right: 32px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    color: #000C2D;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 32px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #000C2D;
 }
 
 .nav a:last-child::before {
-    margin-right: 4px;
-    content: url(./img/person.png);
+  margin-right: 4px;
+  content: url(./img/person.png);
 }
 
 .nav button {
-    width: 136px;
-    height: 44px;
-    border: 1px solid #2F70FE;
-    background-color: white;
-    color: #2F70FE;
-    margin-right: 32px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
+  width: 136px;
+  height: 44px;
+  border: 1px solid #2F70FE;
+  background-color: white;
+  color: #2F70FE;
+  margin-right: 32px;
+  cursor: pointer;
 }
+
+.header__info {
+  background: linear-gradient(177deg, #2F70FE, #2F70FE 50%, rgba(0, 255, 133, 0.08) 50.1%, rgba(0, 255, 133, 0.08));
+}
+
+.header__info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__title {
+  max-width: 620px;
+  text-align: center;
+  margin-top: 114px;
+  margin-bottom: 137px;
+  background-image: url(./img/Rectagle.png);
+  background-size: cover;
+}
+
+.header__title h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  color: white;
+}
+
+.header__title p {
+  margin-top: 7px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+}
+
+.header__title button {
+  margin-top: 33px;
+  width: 162px;
+  height: 52px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.left-people {
+  position: absolute;
+  top: 420px;
+  left: 98px;
+}
+
+.right-people {
+  position: absolute;
+  top: 300px;
+  right: 127px;
+}
+
+.right-img {
+  position: absolute;
+  top: 635px;
+  right: 74px;
+}
+
+.left-img {
+  position: absolute;
+  top: 942px;
+  left: 98px;
+}
+
+.header__article {
+  width: 50%;
+}
+
+.header__article-title h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.header__article-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 148px;
+  margin-top: 40px;
+}
+
+.header__article-box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 253px;
+  text-align: center;
+}
+
+.header__article-box div p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+}
+/*# sourceMappingURL=style.css.map */

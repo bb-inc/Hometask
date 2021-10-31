@@ -1,0 +1,150 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Circular Std'
+
+@mixin flex($ypos, $xpos)
+    display: flex
+    align-items: $ypos
+    justify-content: $xpos
+    
+@mixin font($weight, $size, $line-height)
+    font-weight: $weight
+    font-size: $size
+    line-height: $line-height
+    
+// HEADER 
+
+// LOGO AND NAV
+
+.header__inner 
+    height: 80px
+    @include flex($ypos: center, $xpos: space-between)
+    background-color: white
+
+.header__logo
+    margin-left: 69px
+
+.nav 
+    margin-right: 129px
+
+.nav
+    a
+        @include font($weight: 500, $size: 14px, $line-height: 18px)
+        margin-right: 32px
+        text-decoration: none
+        letter-spacing: 0.03em
+        color: #000C2D
+
+.nav
+    a
+        &:last-child
+            &::before
+                margin-right: 4px
+                content: url(./img/person.png)
+
+
+.nav 
+    button
+        width: 136px
+        height: 44px
+        border: 1px solid #2F70FE
+        background-color: white
+        color: #2F70FE
+        margin-right: 32px
+        cursor: pointer
+
+// HEADER MAIN
+
+.header__info
+    background: linear-gradient(177deg, #2F70FE, #2F70FE 50%, rgba(0, 255, 133, 0.08) 50.1%, rgba(0, 255, 133, 0.08))
+
+.header__info-box
+    @include flex(center, center)
+    flex-direction: column
+    
+
+.header__title
+    max-width: 620px
+    text-align: center
+    margin-top: 114px
+    margin-bottom: 137px
+    background-image: url(./img/Rectagle.png)
+    background-size: cover
+    
+
+.header__title
+    h1
+        @include font(bold, 48px, 65px)
+        color: white
+
+    p
+        margin-top: 7px
+        @include font(normal, 16px, 30px)
+        color: white
+ 
+    button
+        margin-top: 33px
+        width: 162px
+        height: 52px
+        background-color: black
+        color: white
+        border: none
+        cursor: pointer
+        @include font($weight: 300, $size: 16px, $line-height: 20px)
+        letter-spacing: 0.02em
+        
+.left-people
+    position: absolute
+    top: 420px
+    left: 98px
+
+.right-people
+    position: absolute
+    top: 300px
+    right: 127px
+
+.right-img
+    position: absolute
+    top: 635px
+    right: 74px
+
+.left-img
+    position: absolute
+    top: 942px
+    left: 98px
+
+.header__article
+    width: 50%
+
+.header__article-title
+    h1
+        text-align: center
+        margin-top: 80px
+        @include font(500, 40px, 51px)
+        
+
+.header__article-box
+    @include flex(center, space-between)
+    margin-bottom: 148px
+    margin-top: 40px
+
+
+.header__article-box
+    div
+        @include flex(center, center)
+        flex-direction: column
+        max-width: 253px
+        text-align: center
+
+        p
+            margin-top: 24px
+            @include font(normal, 16px, 27px)
+            
+
+        
+    
+
+        
+        
