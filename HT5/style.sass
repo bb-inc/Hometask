@@ -4,6 +4,7 @@
     box-sizing: border-box
     font-family: 'Circular Std'
 
+<<<<<<< HEAD
 @mixin grid($cs, $ce, $rs, $re)
     grid-column-start: $cs
     grid-column-end: $ce
@@ -15,14 +16,28 @@
     font-weight: $fw
     line-height: $lh
 
+=======
+>>>>>>> a8b5863f55ffcab18e0d24b60f944613b3815916
 @mixin flex($ypos, $xpos)
     display: flex
     align-items: $ypos
     justify-content: $xpos
     
+<<<<<<< HEAD
 // HEADER 
 // LOGO AND NAV
     
+=======
+@mixin font($weight, $size, $line-height)
+    font-weight: $weight
+    font-size: $size
+    line-height: $line-height
+    
+// HEADER 
+
+// LOGO AND NAV
+
+>>>>>>> a8b5863f55ffcab18e0d24b60f944613b3815916
 .header__inner 
     height: 80px
     @include flex($ypos: center, $xpos: space-between)
@@ -36,7 +51,11 @@
 
 .nav
     a
+<<<<<<< HEAD
         @include font($fw: 500, $fs: 14px, $lh: 18px)
+=======
+        @include font($weight: 500, $size: 14px, $line-height: 18px)
+>>>>>>> a8b5863f55ffcab18e0d24b60f944613b3815916
         margin-right: 32px
         text-decoration: none
         letter-spacing: 0.03em
@@ -97,7 +116,11 @@
         color: white
         border: none
         cursor: pointer
+<<<<<<< HEAD
         @include font($fw: 300, $fs: 16px, $lh: 20px)
+=======
+        @include font($weight: 300, $size: 16px, $line-height: 20px)
+>>>>>>> a8b5863f55ffcab18e0d24b60f944613b3815916
         letter-spacing: 0.02em
         
 .left-people
@@ -146,6 +169,7 @@
         p
             margin-top: 24px
             @include font(normal, 16px, 27px)
+<<<<<<< HEAD
 
 // MAIN
 
@@ -336,3 +360,12 @@
     p
         color: white
         @include font($fs: 14px, $fw: normal, $lh: 18px)
+=======
+            
+
+        
+    
+
+        
+        
+>>>>>>> a8b5863f55ffcab18e0d24b60f944613b3815916
