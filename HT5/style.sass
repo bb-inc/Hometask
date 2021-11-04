@@ -1,0 +1,336 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Circular Std'
+
+@mixin grid($cs, $ce, $rs, $re)
+    grid-column-start: $cs
+    grid-column-end: $ce
+    grid-row-start: $rs
+    grid-row-end: $re
+
+@mixin font($fs, $fw, $lh)
+    font-size: $fs
+    font-weight: $fw
+    line-height: $lh
+
+@mixin flex($ypos, $xpos)
+    display: flex
+    align-items: $ypos
+    justify-content: $xpos
+    
+// HEADER 
+// LOGO AND NAV
+.header__inner 
+    height: 80px
+    @include flex($ypos: center, $xpos: space-between)
+    background-color: white
+
+.header__logo
+    margin-left: 69px
+
+.nav 
+    margin-right: 129px
+
+.nav
+    a
+        @include font($fw: 500, $fs: 14px, $lh: 18px)
+        margin-right: 32px
+        text-decoration: none
+        letter-spacing: 0.03em
+        color: #000C2D
+
+.nav
+    a
+        &:last-child
+            &::before
+                margin-right: 4px
+                content: url(./img/person.png)
+
+
+.nav 
+    button
+        width: 136px
+        height: 44px
+        border: 1px solid #2F70FE
+        background-color: white
+        color: #2F70FE
+        margin-right: 32px
+        cursor: pointer
+
+// HEADER MAIN
+.header__info
+    background: linear-gradient(177deg, #2F70FE, #2F70FE 50%, rgba(0, 255, 133, 0.08) 50.1%, rgba(0, 255, 133, 0.08))
+
+.header__info-box
+    @include flex(center, center)
+    flex-direction: column
+    
+
+.header__title
+    max-width: 620px
+    text-align: center
+    margin-top: 114px
+    margin-bottom: 137px
+    background-image: url(./img/Rectagle.png)
+    background-size: cover
+    
+
+.header__title
+    h1
+        @include font(bold, 48px, 65px)
+        color: white
+
+    p
+        margin-top: 7px
+        @include font(normal, 16px, 30px)
+        color: white
+ 
+    button
+        margin-top: 33px
+        width: 162px
+        height: 52px
+        background-color: black
+        color: white
+        border: none
+        cursor: pointer
+        @include font($fw: 300, $fs: 16px, $lh: 20px)
+        letter-spacing: 0.02em
+        
+.left-people
+    position: absolute
+    top: 420px
+    left: 98px
+
+.right-people
+    position: absolute
+    top: 300px
+    right: 127px
+
+.right-img
+    position: absolute
+    top: 635px
+    right: 74px
+
+.left-img
+    position: absolute
+    top: 942px
+    left: 98px
+
+.header__article
+    width: 50%
+
+.header__article-title
+    h1
+        text-align: center
+        margin-top: 80px
+        @include font(500, 40px, 51px)
+        
+
+.header__article-box
+    @include flex(center, space-between)
+    margin-bottom: 148px
+    margin-top: 40px
+
+
+.header__article-box
+    div
+        @include flex(center, center)
+        flex-direction: column
+        max-width: 253px
+        text-align: center
+
+        p
+            margin-top: 24px
+            @include font(normal, 16px, 27px)
+
+// MAIN
+
+.main 
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    padding: 120px 0
+    grid-gap: 200px 0px
+
+// ROW ONE 
+
+.main__program
+    @include grid($cs:1 , $ce:2 , $rs:1 , $re:2 )
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-left: 200px
+
+    h2
+        @include font($fs: 28px, $fw: bold, $lh: 37px)
+        width: 40%
+        margin-bottom: 25px
+
+    p
+        @include font($fs: 16px, $fw: normal, $lh: 27px)
+        width: 55%
+
+.main__program-img
+    @include grid($cs: 2, $ce: 3, $rs: 1, $re: 2)
+    margin-left: 100px
+
+// ROW TWO 
+
+.main__ventor
+    @include grid($cs:2, $ce: 3, $rs: 2, $re: 3)
+    margin-left: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        @include font($fs: 28px, $fw: bold, $lh: 37px)
+        margin-bottom: 25px
+        width: 55%
+
+    p
+        @include font($fs: 16px, $fw: normal, $lh: 27px)
+        margin-bottom: 25px
+        width: 60%
+
+    a
+        @include font($fs: 16px, $fw: 500, $lh: 28px)
+        color: #2F70FE
+        text-decoration: none
+
+.main__ventor-img
+    @include grid($cs: 1, $ce: 2, $rs: 2, $re: 3)
+    margin-left: 160px
+
+// ROW THREE 
+
+.main__salesman 
+    @include grid($cs: 1, $ce: 2, $rs: 3, $re: 4)
+    margin-left: 200px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        @include font($fs: 28px, $fw: bold, $lh: 27px)
+        margin-bottom: 25px
+        width: 70%
+
+    p
+        @include font($fs: 16px, $fw: normal, $lh: 27px)
+        margin-bottom: 25px
+        width: 70%
+
+    a
+        @include font($fs: 16px, $fw: 500, $lh: 28px)
+        color: #2F70FE
+        text-decoration: none
+
+.main__salesman-img 
+    @include grid($cs: 2, $ce: 3, $rs: 3, $re: 4)
+    margin-left: 100px
+    
+
+// ROW FOUR 
+
+.main__channel 
+    @include grid($cs: 2, $ce: 3, $rs: 4, $re: 5)
+    margin-left: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        @include font($fs: 28px, $fw: normal, $lh: 37px)
+        margin-bottom: 25px
+        width: 50%
+
+    p
+        @include font($fs: 16px, $fw: normal, $lh: 27px)
+        margin-bottom: 25px
+        width: 60%
+
+    a
+        @include font($fs: 16px, $fw: 500, $lh: 28px)
+        color: #2F70FE
+        text-decoration: none
+    
+.main__channel-img
+    @include grid($cs: 1, $ce: 2, $rs: 4, $re: 5)
+    margin-left: 200px
+
+// ROW FIVE 
+
+.main__version 
+    @include grid($cs: 1, $ce: 2, $rs: 5, $re: 6)
+    margin-left: 200px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        @include font($fs: 28px, $fw: normal, $lh: 37px)
+        margin-bottom: 25px
+        width: 60%
+        
+    p
+        @include font($fs: 16px, $fw: normal, $lh: 27px)
+        margin-bottom: 25px
+        width: 70%
+        
+    a
+        @include font($fs: 16px, $fw: 500, $lh: 28px)
+        color: #2F70FE
+        text-decoration: none
+    
+.main__version-img
+    @include grid($cs: 2, $ce: 3, $rs: 5, $re: 6)
+    margin-left: 100px
+
+// FOOTER 
+
+.footer 
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: black
+    padding-top: 90px
+        
+// FOOTER LINKS 
+
+.footer__links
+    display: flex
+    width: 75%
+    justify-content: space-between
+    margin-bottom: 60px
+
+    h2
+        @include font($fs: 16px, $fw: 700, $lh: 18px)
+        margin-bottom: 25px
+        color: white
+
+    ol 
+        list-style-type: none
+        padding: 0
+
+    li
+        margin-bottom: 10px
+
+        a
+            color: white
+            text-decoration: none
+            @include font($fs: 14px, $fw: normal, $lh: 18px)
+
+// FOOTER INFO 
+    
+.footer__info 
+    display: flex
+    justify-content: space-between
+    width: 60%
+    padding-bottom: 60px
+
+    p
+        color: white
+        @include font($fs: 14px, $fw: normal, $lh: 18px)
